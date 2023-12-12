@@ -1,5 +1,5 @@
 
-div{
+.mainBox {
     display: flex;
     align-items: center;
 }
@@ -30,4 +30,13 @@ div{
 
 .bold{
     font-weight: 800;
+}
+
+.label{
+    background-color: darkblue;
+    padding: 5px;
+    margin: 5px;
+    width:auto;
+    color:white;
+    border-radius: 5px;
 }

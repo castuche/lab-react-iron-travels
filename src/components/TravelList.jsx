@@ -3,7 +3,7 @@ import classes from "/src/TravelList.module.css";
 
 function TravelList (){
     return (
-        <div>
+        <div className={classes.mainBox}>
             <ul>
             {travelPlansData.map((object) => (
                     <div className={classes.cards} key={object.id}>
@@ -15,6 +15,9 @@ function TravelList (){
                         <p>({object.days} Days)</p>
                         <p>{object.description}</p>
                         <p><span className={classes.bold}>Price:</span> {object.totalCost} €</p>
+                        {object.totalCost<=350 && <p className={classes.label}>Great Deal</p>}
+                        {object.totalCost>=1500 && <p className={classes.label}>Premium</p>}
+                        {object.allInclusive && <p className={classes.label}>All-Inclusive</p> }
                     </div>
                     </div>
                 
