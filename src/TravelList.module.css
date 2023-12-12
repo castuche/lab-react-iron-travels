@@ -1,0 +1,33 @@
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    border: black 1px solid;
+    width : 600px;
+    align-items: center;
+    margin:20px;
+    border-radius: 5px;
+}
+
+.image{
+    padding:20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cards img {
+    width:300px;
+}
+
+.bold{
+    font-weight: 800;
+}
